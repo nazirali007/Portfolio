@@ -43,7 +43,7 @@ export default function Home() {
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/nazir-ali-siddiqui-385a3a174?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  href="https://www.linkedin.com/in/nazir-ali-siddiqui-385a3a174"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
