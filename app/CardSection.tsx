@@ -17,7 +17,7 @@ const projects = [
     Author: "Nazir Ali Siddiqui",
     description:
       "Created a web application an adult dating platform facilitating client-provider matchmaking",
-    url: "https://github.com/nazirali007/Bowing-Web-Application",
+    url: "https://github.com/nazirali007/Roses-Web-Panel",
   },
   {
     name: "Bowling Web Application",
@@ -69,11 +69,11 @@ export default function CardSection() {
             <Card
               sx={{
                 minWidth: {
-                  xs: "100%", // 100% width on extra-small screens
-                  sm: 250, // 250px width on small screens and above
+                  xs: "100%",
+                  sm: 250,
                   cursor: "pointer",
                 },
-                maxWidth: 500, // max width of 500px on larger screens
+                maxWidth: 500,
                 borderRadius: "0.6rem",
                 backgroundImage:
                   "url(https://www.split.io/wp-content/uploads/Blog-2160x1080_GitandGitHubatWork-1.jpg)",
@@ -81,8 +81,8 @@ export default function CardSection() {
                 backgroundPosition: "center",
                 color: "white",
                 height: {
-                  xs: "auto", // auto height on extra-small screens
-                  sm: "100%", // 100% height on small screens and above
+                  xs: "auto",
+                  sm: "100%",
                 },
                 transition: "transform 0.3s, box-shadow 0.3s",
                 "&:hover": {

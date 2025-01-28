@@ -11,7 +11,7 @@ const steps = [
   {
     label: "Techdocklabs",
     designaion: "Full Time",
-    duration: "January/2023 - July/2024",
+    duration: "January/2023 - January/2025",
     content: "React js develoer",
     company: "Techdock Labs ",
   },
@@ -22,7 +22,6 @@ const steps = [
     duration: "July/2022 - December/2022 ",
     designaion: "Internship",
   },
-  // { label: "Step 3", content: "This is the static content for Step 3." },
 ];
 
 export default function SteperVertical() {
@@ -35,7 +34,7 @@ export default function SteperVertical() {
       }}
     >
       <Stepper orientation="vertical" activeStep={2}>
-        {steps.map((step, index) => (
+        {steps.map((step) => (
           <Step key={step.label} active={true} completed={true}>
             <StepLabel>{step.label}</StepLabel>
             <StepContent

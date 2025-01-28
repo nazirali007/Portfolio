@@ -1,41 +1,4 @@
 "use client";
-
-// import { Fab } from "@mui/material";
-// import React from "react";
-
-// const SkillSection = () => {
-//   return (
-//     <>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//       <Fab variant="extended" size="medium" color="primary">
-//         Javascript
-//       </Fab>
-//     </>
-//   );
-// };
-
-// export default SkillSection;
-
 import React, { useEffect, useState } from "react";
 import { Fab } from "@mui/material";
 
@@ -48,9 +11,13 @@ const fabLabels = [
   "Tailwind",
   "RestfulApi",
   "NEXT Js",
+  "Web Socket",
+  "CI/CD",
+  "Material UI",
+  "Bootstrap",
   "Communication",
   "Responsive Web Design",
-]; // Example labels for multiple FABs
+];
 
 export default function AnimatedFabs() {
   const [animated, setAnimated] = useState(Array(fabLabels.length).fill(false));
@@ -63,7 +30,7 @@ export default function AnimatedFabs() {
           newAnimated[index] = true;
           return newAnimated;
         });
-      }, index * 500)
+      }, index * 800)
     );
 
     return () => timers.forEach((timer) => clearTimeout(timer));
