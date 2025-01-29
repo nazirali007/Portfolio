@@ -13,9 +13,19 @@ const TopNavbar = () => {
               Download Resume
             </button>
           </a> */}
-          <a href="/resume.pdf" download="Nazir_Ali_Siddiqui_Resume.pdf">
+          <button
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/resume.pdf";
+              link.download = "Nazir_Ali_Siddiqui_Resume.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+          >
             Download Resume
-          </a>
+          </button>
         </div>
       </div>
     </div>
