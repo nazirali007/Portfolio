@@ -13,19 +13,14 @@ const TopNavbar = () => {
               Download Resume
             </button>
           </a> */}
-          <button
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-            onClick={() => {
-              const link = document.createElement("a");
-              link.href = "/resume.pdf";
-              link.download = "Nazir_Ali_Siddiqui_Resume.pdf";
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
+          <a
+            href="/Nazir_Ali_Siddiqui_Resume.pdf"
+            download="Nazir_Ali_Siddiqui_Resume.pdf"
           >
-            Download Resume
-          </button>
+            <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
     </div>
