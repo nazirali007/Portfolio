@@ -70,7 +70,7 @@ export default function Home() {
             <div className="flex flex-col items-start">
               <div>
                 <img
-                  src="images/nazirlatest.jpg"
+                  src="images/nazirProfile.jpg"
                   alt="ProfileImages"
                   style={{
                     height: "20rem",
